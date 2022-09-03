@@ -10,15 +10,15 @@ About Objective Weights: Each objective is assigned a weighting value. The weigh
 
 ---
 
-## Topic 331: Cryptography
+# Topic 331: Cryptography
 
-### 331.1 X.509 Certificates and Public Key Infrastructures (weight: 5)
+## 331.1 X.509 Certificates and Public Key Infrastructures (weight: 5)
 
 **Weight**	5
 
 **Description**	Candidates should understand X.509 certificates and public key infrastructures. They should know how to configure and use OpenSSL to implement certification authorities and issue SSL certificates for various purposes.
 
-#### Key Knowledge Areas:
+### Key Knowledge Areas:
 
 - Understand X.509 certificates, X.509 certificate lifecycle, X.509 certificate fields and X.509v3 certificate extensions
 - Understand trust chains and public key infrastructures, including certificate transparency
@@ -30,47 +30,47 @@ About Objective Weights: Each objective is assigned a weighting value. The weigh
 - Basic feature knowledge of CFSSL
 
 
-##### Understand X.509 certificates
+#### Understand X.509 certificates
 
 Understand X.509 certificates, X.509 certificate lifecycle, X.509 certificate fields and X.509v3 certificate extensions.
 
 
-##### Understand trust chains and public key infrastructures
+#### Understand trust chains and public key infrastructures
 
 Understand trust chains and public key infrastructures, including certificate transparency.
 
 
-##### Generate and manage public and private keys
+#### Generate and manage public and private keys
 
 Generate and manage public and private keys
 
 
-##### Create, operate and secure a certification authority
+#### Create, operate and secure a certification authority
 
 Create, operate and secure a certification authority
 
 
-##### Request, sign and manage server and client certificates
+#### Request, sign and manage server and client certificates
 
 Request, sign and manage server and client certificates
 
 
-##### Revoke certificates and certification authorities
+#### Revoke certificates and certification authorities
 
 Revoke certificates and certification authorities
 
 
-##### Basic feature knowledge of Let's Encrypt, ACME and certbot
+#### Basic feature knowledge of Let's Encrypt, ACME and certbot
 
 Basic feature knowledge of Let's Encrypt, ACME and certbot
 
 
-##### Basic feature knowledge of CFSSL
+#### Basic feature knowledge of CFSSL
 
 Basic feature knowledge of CFSSL
 
 
-#### Partial list of the used files, terms and utilities:
+### Partial list of the used files, terms and utilities:
 
 - openssl (including relevant subcommands)
 - OpenSSL configuration
@@ -80,15 +80,15 @@ Basic feature knowledge of CFSSL
 - OCSP
 
 
-##### openssl (including relevant subcommands)
+#### openssl (including relevant subcommands)
 
 ```bash
 
 ```
 
-##### OpenSSL configuration
+#### OpenSSL configuration
 
-##### PEM, DER, PKCS
+#### PEM, DER, PKCS
 
 PEM
 
@@ -96,11 +96,11 @@ DER
 
 PKCS
 
-##### CSR
+#### CSR
 
-##### CRL
+#### CRL
 
-##### OCSP
+#### OCSP
 
 
 ---
