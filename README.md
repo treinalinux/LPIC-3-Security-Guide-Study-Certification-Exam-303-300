@@ -161,64 +161,114 @@ mod_ssl
 
 **EXAMPLES**
 
+
+Note: in these examples the '\' means the example should be all on one line.
+
+Display the contents of a certificate:
+
 ```bash
 
-       Note: in these examples the '\' means the example should be all on one line.
+ openssl x509 -in cert.pem -noout -text
 
-       Display the contents of a certificate:
+```
 
-        openssl x509 -in cert.pem -noout -text
 
-       Display the "Subject Alternative Name" extension of a certificate:
+Display the "Subject Alternative Name" extension of a certificate:
 
-        openssl x509 -in cert.pem -noout -ext subjectAltName
+```bash
 
-       Display more extensions of a certificate:
+ openssl x509 -in cert.pem -noout -ext subjectAltName
 
-        openssl x509 -in cert.pem -noout -ext subjectAltName,nsCertType
+```
 
-       Display the certificate serial number:
+Display more extensions of a certificate:
 
-        openssl x509 -in cert.pem -noout -serial
+```bash
 
-       Display the certificate subject name:
+ openssl x509 -in cert.pem -noout -ext subjectAltName,nsCertType
 
-        openssl x509 -in cert.pem -noout -subject
+```
 
-       Display the certificate subject name in RFC2253 form:
+Display the certificate serial number:
 
-        openssl x509 -in cert.pem -noout -subject -nameopt RFC2253
+```bash
 
-       Display the certificate subject name in oneline form on a terminal supporting UTF8:
+ openssl x509 -in cert.pem -noout -serial
 
-        openssl x509 -in cert.pem -noout -subject -nameopt oneline,-esc_msb
+```
 
-       Display the certificate SHA1 fingerprint:
+Display the certificate subject name:
 
-        openssl x509 -sha1 -in cert.pem -noout -fingerprint
+```bash
 
-       Convert a certificate from PEM to DER format:
+ openssl x509 -in cert.pem -noout -subject
 
-        openssl x509 -in cert.pem -inform PEM -out cert.der -outform DER
+```
 
-       Convert a certificate to a certificate request:
+Display the certificate subject name in RFC2253 form:
 
-        openssl x509 -x509toreq -in cert.pem -out req.pem -signkey key.pem
+```bash
 
-       Convert a certificate request into a self signed certificate using extensions for a CA:
+ openssl x509 -in cert.pem -noout -subject -nameopt RFC2253
 
-        openssl x509 -req -in careq.pem -extfile openssl.cnf -extensions v3_ca \
-               -signkey key.pem -out cacert.pem
+```
 
-       Sign a certificate request using the CA certificate above and add user certificate extensions:
+Display the certificate subject name in oneline form on a terminal supporting UTF8:
 
-        openssl x509 -req -in req.pem -extfile openssl.cnf -extensions v3_usr \
-               -CA cacert.pem -CAkey key.pem -CAcreateserial
+```bash
 
-       Set a certificate to be trusted for SSL client use and change set its alias to "Steve's Class 1 CA"
+ openssl x509 -in cert.pem -noout -subject -nameopt oneline,-esc_msb
 
-        openssl x509 -in cert.pem -addtrust clientAuth \
-               -setalias "Steve's Class 1 CA" -out trust.pem
+```
+
+Display the certificate SHA1 fingerprint:
+
+```bash
+
+ openssl x509 -sha1 -in cert.pem -noout -fingerprint
+
+```
+
+Convert a certificate from PEM to DER format:
+
+```bash
+
+ openssl x509 -in cert.pem -inform PEM -out cert.der -outform DER
+
+```
+
+Convert a certificate to a certificate request:
+
+```bash
+
+ openssl x509 -x509toreq -in cert.pem -out req.pem -signkey key.pem
+
+```
+
+Convert a certificate request into a self signed certificate using extensions for a CA:
+
+```bash
+
+ openssl x509 -req -in careq.pem -extfile openssl.cnf -extensions v3_ca \
+        -signkey key.pem -out cacert.pem
+
+```
+
+Sign a certificate request using the CA certificate above and add user certificate extensions:
+
+```bash
+
+ openssl x509 -req -in req.pem -extfile openssl.cnf -extensions v3_usr \
+        -CA cacert.pem -CAkey key.pem -CAcreateserial
+
+```
+
+
+```bash
+Set a certificate to be trusted for SSL client use and change set its alias to "Steve's Class 1 CA"
+
+ openssl x509 -in cert.pem -addtrust clientAuth \
+        -setalias "Steve's Class 1 CA" -out trust.pem
 
 ```
 
