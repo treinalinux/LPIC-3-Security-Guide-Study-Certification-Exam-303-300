@@ -104,3 +104,62 @@ PKCS
 
 
 ---
+
+## 331.2 X.509 Certificates for Encryption, Signing and Authentication (weight: 4)
+
+### Weight	4
+
+### Description
+
+Candidates should be able to use X.509 certificates for both server and client authentication. This includes implementing user and server authentication for Apache HTTPD. The version of Apache HTTPD covered is 2.4 or higher.
+
+
+### Key Knowledge Areas:
+
+#### Understand SSL, TLS, including protocol versions and ciphers
+
+Understand SSL, TLS, including protocol versions and ciphers
+
+#### Configure Apache HTTPD with mod_ssl to provide HTTPS service, including SNI and HSTS
+
+Configure Apache HTTPD with mod_ssl to provide HTTPS service, including SNI and HSTS
+
+#### Configure Apache HTTPD with mod_ssl to serve certificate chains 
+
+Configure Apache HTTPD with mod_ssl to serve certificate chains and adjust the cipher configuration (no cipher-specific knowledge)
+
+#### Configure Apache HTTPD with mod_ssl to authenticate users using certificates
+
+Configure Apache HTTPD with mod_ssl to authenticate users using certificates
+
+#### Configure Apache HTTPD with mod_ssl to provide OCSP stapling
+
+Configure Apache HTTPD with mod_ssl to provide OCSP stapling
+
+#### Use OpenSSL for SSL/TLS client and server tests
+Use OpenSSL for SSL/TLS client and server tests
+
+
+### Partial list of the used files, terms and utilities:
+
+- httpd.conf
+- mod_ssl
+- openssl (including relevant subcommands)
+
+
+#### httpd.conf
+
+httpd.conf
+
+#### mod_ssl
+
+mod_ssl
+
+#### openssl (including relevant subcommands)
+
+
+```bash
+
+```
+
+---
