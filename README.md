@@ -263,9 +263,9 @@ Sign a certificate request using the CA certificate above and add user certifica
 
 ```
 
+Set a certificate to be trusted for SSL client use and change set its alias to "Steve's Class 1 CA"
 
 ```bash
-Set a certificate to be trusted for SSL client use and change set its alias to "Steve's Class 1 CA"
 
  openssl x509 -in cert.pem -addtrust clientAuth \
         -setalias "Steve's Class 1 CA" -out trust.pem
