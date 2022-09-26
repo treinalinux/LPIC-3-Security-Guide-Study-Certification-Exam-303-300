@@ -149,13 +149,15 @@ Use OpenSSL for SSL/TLS client and server tests
 
 #### httpd.conf
 
-httpd.conf
+[httpd.conf](https://github.com/treinalinux/LPIC-3-Security-Guide-Study-Certification-Exam-303-300/tree/main/331/2/httpd)
 
 #### mod_ssl
 
-mod_ssl
+[mod_ssl](https://github.com/treinalinux/LPIC-3-Security-Guide-Study-Certification-Exam-303-300/tree/main/331/2/httpd/mod_ssl)
 
 #### openssl (including relevant subcommands)
+
+[openssl](https://github.com/treinalinux/LPIC-3-Security-Guide-Study-Certification-Exam-303-300/tree/main/331/1/openssl)
 
 ##### openssl-x509, x509 - Certificate display and signing utility
 
